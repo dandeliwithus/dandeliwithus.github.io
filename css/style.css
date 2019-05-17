@@ -187,3 +187,8 @@ On click the images will be displayed at normal size to complete the effect
 	border:1px solid #000;
 	font-size: 13px;
 }
+
+.navbar-brand img
+{
+	height:100px;
+}
