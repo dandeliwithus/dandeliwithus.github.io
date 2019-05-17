@@ -14,7 +14,10 @@ body {
 }
 
 .link-custom{
-    color:#0067b8;
+    color:#056839;
+}
+.custom-success	{
+	background-color:#056839;	
 }
 
 
@@ -191,4 +194,9 @@ On click the images will be displayed at normal size to complete the effect
 .navbar-brand img
 {
 	height:100px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	color: #056839;
 }
