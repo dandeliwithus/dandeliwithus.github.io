@@ -197,10 +197,13 @@ On click the images will be displayed at normal size to complete the effect
 }
 
 
-h1,h2,h3,h4,h5,h6{
+h6{
 	color: #056839;
 }
 
+h1,h2,h3,h4,h5{
+  color: #8883bc;
+}
 
 
 
@@ -379,4 +382,55 @@ h1,h2,h3,h4,h5,h6{
 
 nav ul li a:hover {
   color: rgb(206, 21, 21);
+}
+
+
+#banner .block .download-btn li {
+  display: inline-block;
+}
+
+#banner .block .download-btn li .btn-apple {
+  background: #8883bc;
+  border: 1px solid transparent;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+
+#banner .block .download-btn li a {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 10px 28px 13px;
+  font-size: 18px;
+}
+
+#banner .block .download-btn li .btn-andriod {
+  background: #6fbf39;
+  border: 1px solid transparent;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+
+#banner .block .download-btn li .btn-windows {
+  background: #00afec;
+  border: 1px solid transparent;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+}
+
+
+#banner .block h1 {
+  margin-bottom: 18px;
+  line-height: 55px;
+  color: #262b31;
+  font-weight: 300;
+}
+
+#banner .block p {
+  font-size: 20px;
+  color: #999;
+  font-weight: 300;
 }
