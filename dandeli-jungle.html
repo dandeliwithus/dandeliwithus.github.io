@@ -44,57 +44,98 @@
   <!-- <div class="alert alert-secondary" role="alert">
           <i class="fas fa-phone"></i>&nbsp; +91-99024-74761
       </div> -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #FFF; font-size: 13px;">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li> -->
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              RESORTS
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="magenta.html">Magenta resort</a>
-              <a class="dropdown-item" href="jungle-inn.html">Jungle INN Homestay</a>
-
-              <a class="dropdown-item" href="dandeli-jungle.html">Dandeli jungle adventure</a>
-              <a class="dropdown-item" href="wildtiger.html">Dandeli wildtiger</a>
-            </div>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="activities.html">ACTIVITIES</a>
-          </li>
-          <li class="nav-item active ">
-            <a class="nav-link" href="sight.html">SIGHTSEEING</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-
-          <!-- <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li> -->
-        </ul>
-        <a href="#" class="btn  btn active black-background white-black" role="button" aria-pressed="true">ENQUIRE NOW
-          <i class="fas fa-angle-right"></i></a>
+      <div class="container header">
+        <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #FFF; font-size: 13px;">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li> -->
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  RESORTS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="magenta.html">Magenta resort</a>
+                  <a class="dropdown-item" href="jungle-inn.html">Jungle INN Homestay</a>
+                  
+                  <a class="dropdown-item" href="dandeli-jungle.html">Dandeli jungle adventure</a>
+                  <a class="dropdown-item" href="wildtiger.html">Dandeli wildtiger</a>
+                </div>
+              </li>
+    
+              <li class="nav-item active">
+                  <a class="nav-link" href="activities.html">ACTIVITIES</a>
+                </li>
+                <li class="nav-item active ">
+                  <a class="nav-link" href="sight.html">SIGHTSEEING</a>
+                </li>
+    
+              <li class="nav-item active">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+    
+              <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+            </ul>
+           
+            <a href="contact.html" class="btn  btn active black-background white-black" role="button" aria-pressed="true">ENQUIRE NOW <i class="fas fa-angle-right"></i></a>
+            <ul class="social-info">
+              <li><a href="https://www.facebook.com/dandeliwithus/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/dandelijungleadventuremotel/"><i class="fa fa-instagram"></i></a></li>
+            
+          </ul>
+        
+          </nav>
       </div>
+          
+      <!-- mobile menu -->
+      <nav class="mobile">
+        <div class="container">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu">MENU <span id="menu-icon"></span></label>
+            <div id="overlay"></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="magenta.html">MAGENTA RESORT</a></li>
+                <li><a href="jungle-inn.html">JUNGLE INN HOMESTAY</a></li>
+                <li><a href="dandeli-jungle.html">DANDELI JUNGLE ADVENTURE</a></li>
+                <li><a href="wildtiger.html">DANDELI WILDTIGER</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+                <li><a href="sight.html">SIGHTSEEING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+            <ul id="social-media">
+                <li>
+                    <a href="https://www.facebook.com/dandeliwithus/">
+                        <i class="fab fa-facebook"></i>
+                        <span class="screen-reader-text">facebook</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://www.instagram.com/dandelijungleadventuremotel/">
+                        <i class="fab fa-instagram"></i>
+                        <span class="screen-reader-text">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </div>
-
+    
+      
   <h4 class="text-center" style="margin-top:20px;">DANDELI JUNGLE ADVENTURE MOTEL</h4>
   <div class="container">
     <div class="row">

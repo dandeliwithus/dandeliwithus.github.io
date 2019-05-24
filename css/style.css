@@ -14,10 +14,10 @@ body {
 }
 
 .link-custom{
-    color:#056839;
+    color:#fff;
 }
 .custom-success	{
-	background-color:#056839;	
+	background-color:#8883bc;	
 }
 
 
@@ -185,11 +185,12 @@ On click the images will be displayed at normal size to complete the effect
 
 .white-black
 {
-	background-color: white;
-	color: #000;
-	border:1px solid #000;
-	font-size: 13px;
+	background-color: #8883bc;
+	color: #fff;
+	
+  font-size: 13px;
 }
+
 
 .navbar-brand img
 {
@@ -211,15 +212,15 @@ h1,h2,h3,h4,h5{
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#8883bc;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#fff;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:rgb(219, 209, 209);
   opacity:0.5
 }
 .site-footer hr.small
@@ -236,25 +237,25 @@ h1,h2,h3,h4,h5{
 }
 .site-footer a
 {
-  color:#737373;
+  color:#fff;
 }
 .site-footer a:hover
 {
-  color:#3366cc;
+  color:#fff;
   text-decoration:none;
 }
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
 }
 .footer-links li
 {
-  display:block
+  display:block;
 }
 .footer-links a
 {
-  color:#737373
+  color:#fff;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -267,7 +268,7 @@ h1,h2,h3,h4,h5{
 }
 .site-footer .social-icons
 {
-  text-align:right
+  text-align:right;
 }
 .site-footer .social-icons a
 {
@@ -277,7 +278,7 @@ h1,h2,h3,h4,h5{
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#fff;
 }
 .copyright-text
 {
@@ -434,3 +435,211 @@ nav ul li a:hover {
   color: #999;
   font-weight: 300;
 }
+
+
+
+.header .social-info {
+  margin-bottom: 0;
+  
+  
+}
+
+.header .social-info li {
+  display: inline-block;
+}
+
+.header .social-info li:first-child a {
+  border-left: 1px solid #dedede;
+}
+.header .social-info li a {
+  color: #aeaeae;
+  padding: 3px 8px;
+  border-right: 1px solid #dedede;
+}
+
+
+
+
+/* mobile menu */
+
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+.mobile {
+    background: #e5e5e5;
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+.mobile input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+.mobile label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+.mobile label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+.mobile input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+.mobile input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.mobile input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+.mobile input:checked ~ #overlay {
+    background: #e5e5e5;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+/* List */
+.mobile ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+.mobile ul > li {
+    margin: 0.5em 0;
+}
+
+.mobile ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+.mobile ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+.mobile ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+.mobile{
+  height: 100%;
+}
+
+/*  */
+
+
+
+
+/* nav media query */
+
+@media only screen and (max-width:600px) {
+  .header 
+  {
+    display: none;
+  }
+}
+
+
+
+
+@media only screen and (min-width:600px) {
+  .mobile 
+  {
+    display: none;
+  }
+}
+
+/*  */

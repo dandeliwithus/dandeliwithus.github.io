@@ -32,7 +32,7 @@
   </head>
 
 <body>
-  <div class="container">
+  <div class="container header">
     <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #FFF; font-size: 13px;">
       <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -77,10 +77,55 @@
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li> -->
         </ul>
+       
         <a href="contact.html" class="btn  btn active black-background white-black" role="button" aria-pressed="true">ENQUIRE NOW <i class="fas fa-angle-right"></i></a>
-    </nav>
+        <ul class="social-info">
+          <li><a href="https://www.facebook.com/dandeliwithus/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/dandelijungleadventuremotel/"><i class="fa fa-instagram"></i></a></li>
+        
+      </ul>
+    
+      </nav>
   </div>
       
+  <!-- mobile menu -->
+  <nav class="mobile">
+    <div class="container">
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu">MENU <span id="menu-icon"></span></label>
+        <div id="overlay"></div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="magenta.html">MAGENTA RESORT</a></li>
+            <li><a href="jungle-inn.html">JUNGLE INN HOMESTAY</a></li>
+            <li><a href="dandeli-jungle.html">DANDELI JUNGLE ADVENTURE</a></li>
+            <li><a href="wildtiger.html">DANDELI WILDTIGER</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="sight.html">SIGHTSEEING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            
+        </ul>
+        <ul id="social-media">
+            <li>
+                <a href="https://www.facebook.com/dandeliwithus/">
+                    <i class="fab fa-facebook"></i>
+                    <span class="screen-reader-text">facebook</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/dandelijungleadventuremotel/">
+                    <i class="fab fa-instagram"></i>
+                    <span class="screen-reader-text">Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+  <!--  -->
 
   <section id="banner" class="wow fadeInUp">
     <div class="container">
@@ -88,7 +133,7 @@
 
             <div class="col-md-6 ">
                 <div class="block">
-                    <img class="app-img img-responsive" src="img/sight/backwater.jpg" alt="">
+                    <img class="app-img img-fluid" src="img/sight/backwater.jpg" alt="">
                 </div>
                 
             </div>
