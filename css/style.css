@@ -486,8 +486,8 @@ nav ul li a:hover {
 /****************** NAVIGATION ******************/
 /************************************************/
 .mobile {
-    background: #e5e5e5;
-    color: #1d1f20;
+    background: #8883bc;
+    color: #fff;
     left: 0;
     position: relative;
     top: 0;
@@ -565,7 +565,7 @@ nav ul li a:hover {
 /*** MENU ***/
 /* Overlay */
 .mobile input:checked ~ #overlay {
-    background: #e5e5e5;
+    background: #8883bc;
     bottom: 0;
     left: 0;
     height: 100vh;
@@ -574,6 +574,7 @@ nav ul li a:hover {
     top: 0;
     width: 100vw;
     z-index: -1;
+    color: white;
 }
 
 /* List */
@@ -599,7 +600,7 @@ nav ul li a:hover {
 }
 
 .mobile ul a {
-    color: #1d1f20!important;
+    color: #fff!important;
     text-decoration: none;
 }
 
