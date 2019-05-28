@@ -514,7 +514,7 @@ nav ul li a:hover {
 #menu-icon,
 #menu-icon:before,
 #menu-icon:after {
-    background: #1d1f20;
+    background: #fff;
     border-radius: 0.05em;
     height: 0.2em;
     transition: all 0.2s ease-in-out;
